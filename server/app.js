@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
   res.send("Helloworld!!!!!");
 });
 app.use('/api',userRoutes)
-const URI ="mongodb+srv://2200032344cseh:nitheesh@cluster0.ypqkmbr.mongodb.net/musicmp3?retryWrites=true&w=majority&appName=Cluster0"
+const URI ="mongodb+srv://<username>:<password>@cluster0.ypqkmbr.mongodb.net/musicmp3?retryWrites=true&w=majority&appName=Cluster0"
 mongoose
   .connect(URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(console.log("Mongodb Connected Successfully......"))
